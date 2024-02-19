@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ title }}
+{% endblock title %}
+
+{% block content %}
+    <div class="flex min-h-screen justify-center items-center bg-indigo-100 px-3">
+        <div class="px-12 py-8 border-2 border-white rounded-3xl bg-white shadow-lg">
+            <h1 class="text-8xl md:text-5xl mb-6">{{ title }}</h1>
+            <p class="text-lg md:text-base">If <code>tailwindcss</code> is set up correctly, this text should be centered on this page.</p>
+        </div>
+    </div>
+{% endblock content %}
