@@ -1,7 +1,5 @@
 This is a no-frills [Quart](https://quart.palletsprojects.com/en/latest/index.html) project starter that allows you to use Tailwind without Node.
 
-
-
 ## Clone this repository
 
 By using git via command line: `git clone https://github.com/dentonzh/quart-tailwind-no-node.git`
@@ -17,14 +15,15 @@ If on Linux or Mac, run `chmod +x tailwindcss` to make `tailwindcss` executable.
 
 ## Set up virtualenv and install dependencies
 
-Via command line: `python -m venv path/to/new/virtual/environment`
+Via command line: `python3 -m venv path/to/new/virtual/environment`
 Followed by this command: `pip install -r requirements.txt`
 
 ## Run your project
 
-Via command line: `quart run`
+Via command line: `python3 run.py`
 
-Note that `app/__init__.py` contains code that runs the `tailwindcss` executable. When you make changes to any of the templates in `app/templates`, `tailwindcss` will automatically compile a new `output.css` file.
+Note that `app/__init__.py` contains code that runs the `tailwindcss` executable when running Quart in debug mode. Stopping your app will terminate the `tailwindcss` process started by it.
+
 
 ## Minify output.css for production
 
